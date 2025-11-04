@@ -7,12 +7,15 @@ public class project {
     System.out.println("masukkan nilai StrukturD= ");
     double StrukturD = newScanner.nextDouble();
 
-    System.out.println("masukkan nilai PBO ");
+    System.out.println("masukkan nilai PBO= ");
     double PBO = newScanner.nextDouble();
 
+     System.out.println("masukkan nilai algoritma dan pemrograman= ");
+     double algoritma = new Scanner.nextDouble();
+
+
+
     
-
-
 
     }
 
