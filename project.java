@@ -20,21 +20,25 @@ public class project {
      System.out.println("masukkan nilai RPL=");
     double RPL = newScanner.nextDouble();
 
-    double ratarata = (StrukturD + PBO + algoritm + RPL)/5;String predikat;
+    double ratarata = (StrukturD + PBO + BasisD + algoritm + RPL)/5;String predikat;
 
-     if (ratarata >= 3.75) {
-                  System.out.println("predikat = A (sangat baik)");
+                if (ratarata >= 3.75) {
+                predikat = "A (sangat baik)";
                } else if (ratarata >= 3.50) {
-                  System.out.println("predikat = AB (baik sekali)");
+                predikat = "AB (baik sekali)";
                } else if (ratarata >=3.00)  {
-                  System.out.println("predikat = B (baik)");
+                predikat = "B (baik)";
                } else if (ratarata >= 2.50) {
-                  System.out.println("predikat = BC (cukup)");
-               } else if (ratarata <=2.50) {
-                  System.out.println("predikat = C (kurang)");
+                predikat = "BC (cukup)";
+               } else { 
+                predikat = "C(kurang)";
                } 
+               
+               System.out.printf("Rata-rata nilai: %.2f\n", ratarata);
+               System.out.println("Predikat = " + predikat);
 
-                if (predikat.toLowerCase().equals("A (sangat baik)/AB (baik sekali)")) {
+             if (predikat.equalsIgnoreCase("A (sangat baik)") || predikat.equalsIgnoreCase("AB (baik sekali)")) {
+
                 System.out.println("memenuhi syarat mendaftar Asisten Dosen");
                 System.out.println("pilih matkul yang diajukan");
                 System.out.println("1. StrukturD");
@@ -65,17 +69,27 @@ public class project {
                      case 5:
                     nilaipilihan = RPL;
                     break;
-                    
+                    default:
 
                     System.out.println("pilihan tidak valid");
-                    System.exit(0);
-                
-                    if(nilaipilihan >= 75){
-                        System.out.println("congratss!Mahasiswa (nama) eligible untuk menjadi Asisten Dosen pada matkul yang di pilih");
-                    }else{
-                        System.out.println("jangan pantang semangat, Mahasiswa (nama) belum memenuhi syarat untuk posisi tersebut");
-                    }
-                    newScanner.close();   
+                    newScanner.close();
+                    return;
                 }
+                
+                   if (nilaipilihan >= 75) {
+                System.out.println("congratss!Mahasiswa (nama) eligible untuk menjadi Asisten Dosen pada matkul yang di pilih.");
+            } else {
+                System.out.println("jangan pantang semangat, Mahasiswa (nama) belum memenuhi syarat untuk posisi tersebut.");
+            }
+        } else {
+            System.out.println("Belum memenuhi syarat untuk mendaftar Asisten Dosen.");
+        }
+
+        newScanner.close();
     }
 }
+
+
+
+
+
