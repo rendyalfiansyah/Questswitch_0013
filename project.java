@@ -69,25 +69,13 @@ public class project {
 
                     System.out.println("pilihan tidak valid");
                     System.exit(0);
-
-               
                 
-
-
-                    
-
-                      
-                
-                    
+                    if(nilaipilihan >= 75){
+                        System.out.println("congratss!Mahasiswa (nama) eligible untuk menjadi Asisten Dosen pada matkul yang di pilih");
+                    }else{
+                        System.out.println("jangan pantang semangat, Mahasiswa (nama) belum memenuhi syarat untuk posisi tersebut");
+                    }
+                    newScanner.close();   
                 }
-
-        
-
-                
-
-
-    
-
     }
-
-    }
+}
