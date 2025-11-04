@@ -10,6 +10,10 @@ public class project {
     System.out.println("masukkan nilai PBO= ");
     double PBO = newScanner.nextDouble();
 
+     System.out.println("masukkan nilai BasisD= ");
+    double BasisD = newScanner.nextDouble();
+
+
      System.out.println("masukkan nilai algoritm dan pemrograman= ");
      double algoritm = newScanner.nextDouble();
 
@@ -36,8 +40,49 @@ public class project {
                 System.out.println("1. StrukturD");
                 System.out.println("2. PBO");
                 System.out.println("3. BasisD");
-                System.out.println("4. Algoritm dan pemrograman");
+                System.out.println("4. algoritm dan pemrograman");
                 System.out.println("5. RPL");
+
+                  int pilihan = newScanner.nextInt();
+                  double nilaipilihan = 0;
+                switch (pilihan) {
+                    case 1:
+                    nilaipilihan = StrukturD;
+                    break;
+
+                    case 2:
+                    nilaipilihan = PBO;
+                    break;
+
+                    case 3:
+                    nilaipilihan =  BasisD;
+                    break;
+
+                    case 4:
+                    nilaipilihan = algoritm;
+                    break;
+
+                     case 5:
+                    nilaipilihan = RPL;
+                    break;
+                    
+
+                    System.out.println("pilihan tidak valid");
+                    System.exit(0);
+
+               
+                
+
+
+                    
+
+                      
+                
+                    
+                }
+
+        
+
                 
 
 
