@@ -30,10 +30,19 @@ public class project {
                   System.out.println("predikat = C (kurang)");
                } 
 
+                if (predikat.toLowerCase().equals("A (sangat baik)/AB (baik sekali)")) {
+                System.out.println("memenuhi syarat mendaftar Asisten Dosen");
+                System.out.println("pilih matkul yang diajukan");
+                System.out.println("1. StrukturD");
+                System.out.println("2. PBO");
+                System.out.println("3. BasisD");
+                System.out.println("4. Algoritm dan pemrograman");
+                System.out.println("5. RPL");
+                
 
 
     
 
     }
 
-}
+    }
