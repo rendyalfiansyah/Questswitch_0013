@@ -10,8 +10,13 @@ public class project {
     System.out.println("masukkan nilai PBO= ");
     double PBO = newScanner.nextDouble();
 
-     System.out.println("masukkan nilai algoritma dan pemrograman= ");
-     double algoritma = new Scanner.nextDouble();
+     System.out.println("masukkan nilai algoritm dan pemrograman= ");
+     double algoritm = newScanner.nextDouble();
+
+     System.out.println("masukkan nilai RPL=");
+    double RPL = newScanner.nextDouble();
+
+    double ratarata = (StrukturD + PBO + algoritm + RPL)/5;String predikat;
 
 
 
